@@ -1,6 +1,6 @@
 # Privacy Policy — Fidget Spinner (Chrome Extension)
 
-**Last updated:** March 2025
+**Last updated:** March 2026
 
 ## Overview
 
