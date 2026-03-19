@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Spinner</title>
+    <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+    <div class="google-apps">
+        <button
+            type="button"
+            id="google-apps-btn"
+            class="google-apps-btn"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-controls="google-apps-panel"
+            title="Google apps"
+        >
+            <span class="google-apps-dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+            </span>
+        </button>
+        <div id="google-apps-panel" class="google-apps-panel" role="region" aria-label="Google apps" hidden>
+            <nav class="google-apps-nav">
+                <section class="google-apps-category" aria-labelledby="cat-core">
+                    <h2 id="cat-core" class="google-apps-category-title">🌐 Core Google Apps</h2>
+                    <div class="google-apps-grid">
+                        <a class="google-app-tile" href="https://myaccount.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--account" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Account</span>
+                        </a>
+                        <a class="google-app-tile" href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--search" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Search</span>
+                        </a>
+                        <a class="google-app-tile" href="https://mail.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--gmail" aria-hidden="true"></span>
+                            <span class="google-app-label">Gmail</span>
+                        </a>
+                        <a class="google-app-tile" href="https://www.google.com/imghp" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--images" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Images</span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="google-apps-category" aria-labelledby="cat-work">
+                    <h2 id="cat-work" class="google-apps-category-title">📁 Productivity &amp; Work</h2>
+                    <div class="google-apps-grid">
+                        <a class="google-app-tile" href="https://drive.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--drive" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Drive</span>
+                        </a>
+                        <a class="google-app-tile" href="https://docs.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--letter google-app-icon--docs" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Docs</span>
+                        </a>
+                        <a class="google-app-tile" href="https://sheets.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--letter google-app-icon--sheets" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Sheets</span>
+                        </a>
+                        <a class="google-app-tile" href="https://slides.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--letter google-app-icon--slides" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Slides</span>
+                        </a>
+                        <a class="google-app-tile" href="https://docs.google.com/forms/" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--letter google-app-icon--forms" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Forms</span>
+                        </a>
+                        <a class="google-app-tile" href="https://keep.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--letter google-app-icon--keep" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Keep</span>
+                        </a>
+                        <a class="google-app-tile" href="https://calendar.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--calendar" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Calendar</span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="google-apps-category" aria-labelledby="cat-chat">
+                    <h2 id="cat-chat" class="google-apps-category-title">💬 Communication</h2>
+                    <div class="google-apps-grid">
+                        <a class="google-app-tile" href="https://meet.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--meet" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Meet</span>
+                        </a>
+                        <a class="google-app-tile" href="https://chat.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--chat" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Chat</span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="google-apps-category" aria-labelledby="cat-maps">
+                    <h2 id="cat-maps" class="google-apps-category-title">📍 Maps &amp; Media</h2>
+                    <div class="google-apps-grid">
+                        <a class="google-app-tile" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--maps" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Maps</span>
+                        </a>
+                        <a class="google-app-tile" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--youtube" aria-hidden="true"></span>
+                            <span class="google-app-label">YouTube</span>
+                        </a>
+                        <a class="google-app-tile" href="https://music.youtube.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--youtube-music" aria-hidden="true"></span>
+                            <span class="google-app-label">YouTube Music</span>
+                        </a>
+                        <a class="google-app-tile" href="https://photos.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--photos" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Photos</span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="google-apps-category" aria-labelledby="cat-shop">
+                    <h2 id="cat-shop" class="google-apps-category-title">🛒 Shopping &amp; Payments</h2>
+                    <div class="google-apps-grid">
+                        <a class="google-app-tile" href="https://play.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--play" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Play</span>
+                        </a>
+                        <a class="google-app-tile" href="https://pay.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--letter google-app-icon--pay" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Pay</span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="google-apps-category" aria-labelledby="cat-more">
+                    <h2 id="cat-more" class="google-apps-category-title">🌍 More Google Services</h2>
+                    <div class="google-apps-grid">
+                        <a class="google-app-tile" href="https://news.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--letter google-app-icon--news" aria-hidden="true"></span>
+                            <span class="google-app-label">Google News</span>
+                        </a>
+                        <a class="google-app-tile" href="https://translate.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--translate" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Translate</span>
+                        </a>
+                        <a class="google-app-tile" href="https://ads.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--letter google-app-icon--ads" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Ads</span>
+                        </a>
+                        <a class="google-app-tile" href="https://classroom.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--letter google-app-icon--classroom" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Classroom</span>
+                        </a>
+                        <a class="google-app-tile" href="https://one.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--letter google-app-icon--one" aria-hidden="true"></span>
+                            <span class="google-app-label">Google One</span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="google-apps-category" aria-labelledby="cat-extra">
+                    <h2 id="cat-extra" class="google-apps-category-title">➕ Extra (More from Google)</h2>
+                    <div class="google-apps-grid">
+                        <a class="google-app-tile" href="https://earth.google.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--letter google-app-icon--earth" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Earth</span>
+                        </a>
+                        <a class="google-app-tile" href="https://meet.google.com" target="_blank" rel="noopener noreferrer" title="Duo is merged into Meet in many regions">
+                            <span class="google-app-icon google-app-icon--duo" aria-hidden="true"></span>
+                            <span class="google-app-label">Google Duo</span>
+                        </a>
+                        <a class="google-app-tile" href="https://www.blogger.com" target="_blank" rel="noopener noreferrer">
+                            <span class="google-app-icon google-app-icon--letter google-app-icon--blogger" aria-hidden="true"></span>
+                            <span class="google-app-label">Blogger</span>
+                        </a>
+                    </div>
+                </section>
+            </nav>
+        </div>
+    </div>
+
+    <div class="popup-shell">
+        <canvas id="spinner-canvas" width="360" height="360"></canvas>
+    </div>
+
+    <footer class="sites-tray-footer" id="sites-tray-footer" aria-label="Top sites tray">
+        <div id="sites-dock-wrap" class="sites-dock-wrap" hidden>
+            <div class="sites-dock" role="region" aria-label="Frequent sites">
+                <div class="sites-dock-header">Frequent sites</div>
+                <div id="sites-dock-list" class="sites-dock-list" role="toolbar"></div>
+            </div>
+        </div>
+        <button
+            type="button"
+            id="sites-tray-toggle"
+            class="sites-tray-toggle"
+            role="switch"
+            aria-checked="false"
+            aria-controls="sites-dock-wrap"
+            title="Show or hide frequent sites"
+        >
+            <span class="sites-tray-toggle-track" aria-hidden="true">
+                <span class="sites-tray-toggle-thumb"></span>
+            </span>
+            <span class="sites-tray-toggle-label">Top sites</span>
+        </button>
+    </footer>
+
+    <script src="popup.js"></script>
+    <script src="google-apps.js"></script>
+    <script src="frequent-sites.js"></script>
+</body>
+</html>
